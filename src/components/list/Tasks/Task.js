@@ -34,7 +34,7 @@ export default function Task ({task}){
                     <img src={teamMember?.avatar} className="team-avater" />
                     <p className="lws-task-assignedOn">{teamMember?.name}</p>
                     </div>
-                    {status ==='complete'?
+                    {projectStatus ==='complete'?
                     <button className="lws-delete" onClick={()=>deleteCompleted(`${task.id}`)}>
                     <svg
                     fill="none"
@@ -69,3 +69,4 @@ export default function Task ({task}){
             </div>
     )
 }
+
